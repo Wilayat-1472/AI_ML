@@ -22,6 +22,7 @@ This repository contains my submissions for the AI/ML Engineering Internship at 
   - Fine-tuned with Hugging Face Trainer API
   - Generates supportive, empathetic responses
   - CLI and Streamlit interfaces included
+- **Note**: Full training on GPU is recommended for production use. The notebook uses a subset for demonstration on CPU.
 - **Notebook**: `task5_mental_health_chatbot/mental_health_chatbot.ipynb`
 - **Web App**: `task5_mental_health_chatbot/streamlit_app.py`
 
