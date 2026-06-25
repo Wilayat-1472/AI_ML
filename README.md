@@ -151,8 +151,26 @@ source venv/bin/activate        # Linux / macOS
 # venv\Scripts\activate         # Windows
 
 # 3. Install dependencies
-pip install pandas numpy scikit-learn seaborn matplotlib torch transformers datasets streamlit jupyter
+pip install pandas numpy scikit-learn seaborn matplotlib torch transformers datasets streamlit jupyter kagglehub python-dotenv
 ```
+
+### Kaggle Credentials (Optional)
+
+Some notebooks download datasets from Kaggle. To use this feature:
+
+1. Copy the example env file and fill in your Kaggle API credentials:
+```bash
+cp .env.example .env
+```
+
+2. Edit `.env` with your Kaggle username and API key:
+```env
+KAGGLE_USERNAME=your_kaggle_username
+KAGGLE_KEY=your_kaggle_api_key
+```
+> **Security:** `.env` is in `.gitignore` and will never be committed. Credentials are loaded at runtime only.
+
+3. If no `.env` is found, notebooks automatically fall back to built-in sklearn datasets or public URLs — no credentials required.
 
 ### Run Notebooks
 
